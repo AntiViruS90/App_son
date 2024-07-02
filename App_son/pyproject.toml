@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "app-son"
+version = "0.1.0"
+description = ""
+authors = ["AntiViruS90 <slava90nikitin90@gmail.com>"]
+readme = "README.md"
+packages = [
+    { include = "brain_games" },
+]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+prompt = "^0.4.1"
+
+[tool.poetry.scripts]
+TwoMathSign = "brain_games.scripts.TwoMath_script:main"
+OneMathSign = "brain_games.scripts.OneMath_script:main"
+Alphabet = "brain_games.scripts.alphabet_script:main"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
